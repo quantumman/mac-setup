@@ -1,0 +1,13 @@
+---
+# file: ./mas/vars/main.yml
+
+packages:
+  - { id: 497799835, name: Xcode }
+  - { id: 409183694, name: Keynote }
+  - { id: 715768417, name: Microsoft Remote Desktop }
+  - { id: 415166115, name: Typist }
+  - { id: 803453959, name: Slack }
+  - { id: 409201541, name: Pages }
+  - { id: 1176895641, name: Spark }
+  - { id: 413857545, name: Divvy }
+  - { id: 409203825, name: Numbers }

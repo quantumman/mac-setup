@@ -1,0 +1,17 @@
+---
+# file: ./visual_studio_code/tasks/main.yml
+
+- block:
+
+  - name: visual studio code basic setting
+    template:
+      src: settings.json
+      dest: "~/Library/Application Support/Code/User"
+      mode: 0644
+
+  - name: visual studio code install extension
+    raw: "code --install-extension {{ item }}"
+    with_items: '{{ extensions }}'
+
+  tags:
+    - visual_studio_code

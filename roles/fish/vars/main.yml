@@ -1,0 +1,14 @@
+---
+# file: ./fish/vars/main.yml
+
+plugins:
+  - z
+  - spin
+  - gitignore
+  - oh-my-fish/plugin-extract
+  - oh-my-fish/plugin-peco
+  - oh-my-fish/plugin-expand
+  - edc/bass
+  - 0rax/fish-bd
+
+theme: omf/theme-clearance

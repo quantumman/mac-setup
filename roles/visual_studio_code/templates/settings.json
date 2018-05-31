@@ -1,0 +1,52 @@
+{
+  // Place your settings in this file to overwrite the default settings
+  // editor
+  "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.renderWhitespace": "all",
+  "editor.minimap.enabled": false,
+  "editor.tabSize": 2,
+  "editor.detectIndentation": true,
+  "editor.formatOnSave": false,
+
+  // workbench
+  "workbench.colorTheme": "One Monokai",
+  "guides.enabled": false,
+  "workbench.startupEditor": "newUntitledFile",
+  "team.showWelcomeMessage": false,
+  "sync.gist": "ce84371f60d17f5bf07c51ccbc88e7ab",
+  "sync.lastUpload": "2018-02-07T04:42:18.622Z",
+  "sync.autoDownload": false,
+  "sync.autoUpload": false,
+  "sync.lastDownload": "",
+  "sync.forceDownload": false,
+  "sync.anonymousGist": false,
+  "sync.host": "",
+  "sync.pathPrefix": "",
+  "sync.quietSync": false,
+  "sync.askGistName": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "gitlens.advanced.messages": {
+      "suppressCommitHasNoPreviousCommitWarning": false,
+      "suppressCommitNotFoundWarning": false,
+      "suppressFileNotUnderSourceControlWarning": false,
+      "suppressGitVersionWarning": false,
+      "suppressLineUncommittedWarning": false,
+      "suppressNoRepositoryWarning": false,
+      "suppressResultsExplorerNotice": false,
+      "suppressShowKeyBindingsNotice": true,
+      "suppressUpdateNotice": false,
+      "suppressWelcomeNotice": true
+  },
+  "gitlens.keymap": "none",
+  "material-icon-theme.showUpdateMessage": false,
+  "markdown-pdf.styles": [
+      "/Users/quantumman/Documents/Curriculum-Vitae-template/github-markdown.css"
+  ],
+  // Enable per-language
+  "[javascript]": {
+      "editor.formatOnSave": true
+  },
+  "gitlens.historyExplorer.enabled": true,
+  "editor.multiCursorModifier": "ctrlCmd"
+}

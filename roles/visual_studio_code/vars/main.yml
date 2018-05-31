@@ -1,0 +1,5 @@
+---
+# file: ./vsc/vars/main.yml
+
+extensions:
+  - Shan.code-settings-sync

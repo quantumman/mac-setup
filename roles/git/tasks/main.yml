@@ -1,0 +1,10 @@
+---
+# file: ./git/tasks/main.yml
+
+- block:
+
+  - name: gitconfig
+    template:
+      src: gitconfig
+      dest: "~/.gitconfig"
+      mode: 0644

@@ -1,0 +1,10 @@
+---
+# file: ./xcode/tasks/main.yml
+
+- block:
+
+  - name: Xcode's additional required components
+    raw: /Applications/Xcode.app/Contents/MacOS/Xcode -installComponents
+
+  tags:
+    - xcode

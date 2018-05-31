@@ -1,0 +1,39 @@
+---
+# file: ./fish/tasks/main.yml
+
+- block:
+
+  - name: fisher install
+    get_url:
+      url: https://git.io/fisher
+      dest: ~/.config/fish/functions/fisher.fish
+    register: fisher
+
+  - block:
+
+      - block:
+
+        - name: fisher get installed plugin list
+          shell: 'fish -c "fisher ls"'
+          register: fish_plugins
+          changed_when: False
+          check_mode: no
+
+        - name: fisher install items
+          shell: 'fish -c "fisher install {{ item }}"'
+          when: '"item.id" not in fish_plugins.stdout'
+          with_items: "{{ plugins }}"
+
+      - name: fisher install theme {{ theme }}
+        shell: 'fish -c "fisher {{ theme }}"'
+
+    when: fisher is succeeded
+
+  - name: fish config
+    template:
+      src: config.fish
+      dest: "~/.config/fish/config.fish"
+      mode: 0644
+
+  tags:
+    - fish

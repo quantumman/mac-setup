@@ -1,0 +1,19 @@
+---
+# file: site.yml
+
+# ---------------
+# localhost
+# ---------------
+- hosts: localhost
+  connection: local
+  gather_facts: yes
+  roles:
+    - homebrew
+    - homebrew_cask
+    - mas
+    - fish
+    - visual_studio_code
+    - git
+    - tmux
+    - node
+    - macos

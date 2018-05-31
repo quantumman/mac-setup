@@ -1,0 +1,22 @@
+---
+# file: ./tmux/tasks/main.yml
+
+- block:
+
+  - name: clone tmux config
+    git:
+      repo: https://github.com/gpakosz/.tmux.git
+      dest: "~/.tmux"
+      force: true
+
+  - name: install tmux config
+    file:
+      src: ~/.tmux/.tmux.conf
+      dest: ./.tmux.conf
+      force: true
+      state: link
+
+  - name: copy tmux.config.local
+    copy:
+      src: ~/.tmux/.tmux.conf.local
+      dest: ~/.tmux.conf.local

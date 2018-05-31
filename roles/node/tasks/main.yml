@@ -1,0 +1,15 @@
+---
+# file: ./node/tasks/main.yml
+
+- block:
+
+  - name: find nodenv
+    shell: command -v ls >/dev/null 2>&1
+    register: nodenv
+    ignore_errors: yes
+
+  - block:
+    - name: initialize nodenv
+      shell: nodenv init
+      changed_when: False
+      when: nodenv.rc == 1

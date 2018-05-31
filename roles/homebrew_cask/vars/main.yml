@@ -1,0 +1,10 @@
+---
+# file: ./homebrew_cask/vars/main.yml
+
+packages:
+  - { name: google-chrome, state: present }
+  - { name: firefox, state: present }
+  - { name: visual-studio-code, state: present }
+  - { name: iterm2, state: present }
+  - { name: docker, state: present }
+  - { name: font-fira-code, state: present }

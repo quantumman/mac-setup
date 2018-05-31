@@ -1,0 +1,9 @@
+---
+# file: ./macos/vars/main.yml
+
+settings:
+  - { domain: com.apple.Safari, key: IncludeInternalDebugMenu, type: bool, value: true }
+  - { domain: com.apple.menuextra.battery, key: ShowPercent, type: string, value: YES }
+  - { domain: NSGlobalDomain, key: AppleShowAllExtensions, type: bool, value: TRUE }
+  - { domain: com.apple.dock, key: autohide, type: bool, value: TRUE }
+  - { domain: com.apple.AppleMultitouchTrackpad, type: integer, key: Clicking, value: 1 }

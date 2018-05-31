@@ -1,0 +1,24 @@
+---
+# file: ./homebrew/vars/main.yml
+
+taps:
+  - homebrew/cask
+  - homebrew/cask-fonts
+
+packages:
+  - { name: ansible, state: present }
+  - { name: git, state: present }
+  - { name: coreutils, state: present }
+  - { name: mas, state: present } # mas-cli(mac apple store)
+  - { name: tree, state: present }
+  - { name: nkf, state: present }
+  - { name: fontconfig, state: present }  # for fc-cache
+  - { name: node, state: present }
+  - { name: nodenv, state: present }
+  - { name: python, state: present }
+  - { name: grep, state: present }
+  - { name: fish, state: present }
+  - { name: emacs-plus, state: present }
+  - { name: tmux, state: present }
+  - { name: wget, state: present }
+  - { name: peco, state: present }
