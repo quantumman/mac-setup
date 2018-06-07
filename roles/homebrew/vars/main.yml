@@ -4,6 +4,7 @@
 taps:
   - homebrew/cask
   - homebrew/cask-fonts
+  - d12frosted/emacs-plus
 
 packages:
   - { name: ansible, state: present }
