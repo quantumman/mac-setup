@@ -23,3 +23,4 @@ packages:
   - { name: tmux, state: present }
   - { name: wget, state: present }
   - { name: peco, state: present }
+  - { name: haskell-stack, state: present }
